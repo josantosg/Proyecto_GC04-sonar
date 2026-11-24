@@ -22,9 +22,9 @@
     <p>Has iniciado sesión como <strong th:text="${email}">correo</strong>.</p>
 
     <!-- RN-02: una cuenta no verificada puede entrar, pero con acciones limitadas -->
-    <div class="aviso" role="status" th:unless="${verificada}">
+    <output class="aviso" th:unless="${verificada}">
         <p>Tu cuenta está pendiente de verificar. Hasta que abras el enlace que te hemos enviado a tu correo institucional, no podrás publicar anuncios ni contactar con otros estudiantes.</p>
-    </div>
+    </output>
     <p th:if="${verificada}">Tu cuenta está verificada.</p>
 
     <form th:action="@{/logout}" method="post">
