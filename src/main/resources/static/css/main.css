@@ -21,3 +21,4 @@ main {
 h1 {
     color: var(--accent);
 }
+output { display: block; }
