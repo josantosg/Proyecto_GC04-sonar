@@ -49,7 +49,7 @@ class SesionControllerTest {
 
         assertThat(vista).isEqualTo("login");
         assertThat(model).containsEntry("error", AccesoService.ERROR_GENERICO);
-        assertThat(model.get("email")).isEqualTo(CORREO);
+        assertThat(model).containsEntry("email", CORREO);
     }
 
     @Test
