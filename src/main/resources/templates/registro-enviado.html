@@ -13,7 +13,7 @@
 <main>
     <h1>Revisa tu correo</h1>
     <!-- Mismo mensaje exista o no la cuenta: no revela si el correo está registrado (US-001-AC-03) -->
-    <p role="status" th:text="${mensaje != null} ? ${mensaje} : 'Si el correo es válido, recibirás un enlace'"></p>
+    <output th:text="${mensaje != null} ? ${mensaje} : 'Si el correo es válido, recibirás un enlace'"></output>
     <p><a th:href="@{/}">Volver al inicio</a></p>
 </main>
 </body>
