@@ -20,7 +20,7 @@
 <main>
     <h1>Iniciar sesión</h1>
 
-    <div class="ok" role="status" th:if="${aviso}" th:text="${aviso}"></div>
+    <output class="ok" th:if="${aviso}" th:text="${aviso}"></output>
     <!-- Mensaje genérico: no indica si falla el correo o la contraseña (US-003-AC-01) -->
     <div class="error" role="alert" id="error-login" th:if="${error}" th:text="${error}" tabindex="-1"></div>
 
