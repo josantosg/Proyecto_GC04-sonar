@@ -48,7 +48,7 @@ class SesionControllerTest {
         String vista = controller.iniciarSesion(CORREO, "ClaveMala1", new MockHttpServletRequest(), model);
 
         assertThat(vista).isEqualTo("login");
-        assertThat(model.get("error")).isEqualTo(AccesoService.ERROR_GENERICO);
+        assertThat(model).containsEntry("error", AccesoService.ERROR_GENERICO);
         assertThat(model.get("email")).isEqualTo(CORREO);
     }
 
